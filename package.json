@@ -8,7 +8,7 @@
     "start": "webpack-dev-server",
     "test": "jest",
     "test-update-snapshots": "jest --updateSnapshot",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o dist/storybook",
     "lint": "./node_modules/.bin/eslint ."
@@ -42,7 +42,7 @@
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
-      "/test-helpers/"
+      "/utils/"
     ],
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
@@ -51,9 +51,6 @@
     },
     "setupFiles": [
       "<rootDir>/jest/setup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
     ]
   },
   "serve": {
@@ -88,9 +85,6 @@
     "copy-webpack-plugin": "5.0.5",
     "css-loader": "3.2.0",
     "cssimportant-loader": "0.4.0",
-    "enzyme": "3.10.0",
-    "enzyme-adapter-react-16": "1.15.1",
-    "enzyme-to-json": "3.4.3",
     "eslint": "6.7.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-import-resolver-webpack": "0.11.1",

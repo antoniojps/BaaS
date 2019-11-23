@@ -27,7 +27,7 @@ const defaultConfig = {
       { from: 'public', to: '.' },
     ]),
     devMode ? null : new JavaScriptObfuscator(),
-  ].filter(i => i),
+  ].filter((i) => i),
   module: {
     rules: [
       {

@@ -4,9 +4,12 @@ import { Transition } from 'react-transition-group';
 import './widget.scss';
 
 class Widget extends Component {
-  state = {
-    opened: false,
-    showDock: true,
+  constructor(props) {
+    super(props);
+    this.state = {
+      opened: false,
+      showDock: true,
+    };
   }
 
   handleToggleOpen = () => {
@@ -53,7 +56,7 @@ class Widget extends Component {
     return (
       <div className="docked-widget">
         <Transition in={opened} timeout={250} onExited={this.handleWidgetExit}>
-          {status => (
+          {(status) => (
             <div className={`widget widget-${status}`}>
               <div className="widget-header">
                 <div className="widget-header-title">

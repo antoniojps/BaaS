@@ -3,7 +3,6 @@
 
 Easy creation of embeddable widgets - https://seriousben.github.io/embeddable-react-widget
 
-[![CircleCI](https://circleci.com/gh/seriousben/embeddable-react-widget.svg?style=shield)](https://circleci.com/gh/seriousben/embeddable-react-widget)
 [![codecov](https://codecov.io/gh/seriousben/embeddable-react-widget/branch/master/graph/badge.svg)](https://codecov.io/gh/seriousben/embeddable-react-widget)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
@@ -17,12 +16,6 @@ Easy creation of embeddable widgets - https://seriousben.github.io/embeddable-re
 * Bookmarklet supported for fast testing and demonstration
 * User theming of widget
 * Obfuscating of the widget code
-* Unit Tested with code coverage enabled
-* Continuous Integration ready
-
-## Demo
-
-<img width="600px" src="./bookmarklet-flow.gif" />
 
 ## Running the widget
 
@@ -50,24 +43,6 @@ $ npm test
 $ npm run build
 ... create files in /dist
 ```
-
-## Roadmap
-
-- [x] Widget as react app - index.html works (webpack, babel, react)
-- [x] React widget (widget builder)
-- [x] Webpack changed to output a library
-- [x] Add tests
-- [x] Add circleci integration
-- [x] Add codecov integration for codecoverage
-- [x] Production Build
-- [x] Minified
-- [x] Add greenkeeper
-- [x] Bookmarklet
-- [x] Reset / Cleanslate / No-conflicts of styles
-- [x] Obfuscation
-- [ ] Theming support
-- [ ] Storyboard and docs
-- [ ] Integrate eslint with webpack
 
 ## Background
 
