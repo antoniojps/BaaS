@@ -8,7 +8,7 @@
     "start": "webpack-dev-server",
     "test": "jest",
     "test-update-snapshots": "jest --updateSnapshot",
-    "deploy": "npm run build",
+    "deploy": "npm run build && gh-pages -d dist",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o dist/storybook",
     "lint": "./node_modules/.bin/eslint ."
